@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* first-page */
+        .first-page {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 0, 0);
+        }
+
+        /* header */
+        .header {
+            height: 8%;
+            width: 100%;
+            background-color: rgb(255, 201, 182);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .home {
+            margin-left: 50%;
+            color: #F87B1B;
+
+        }
+
+        header {
+            margin-left: 80px;
+
+        }
+
+        .My-name {
+            margin-left: 90px;
+        }
+
+        /* main */
+        .main {
+            height: 80%;
+            width: 100%;
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* my-text */
+        .my-text {
+            height: 100%;
+            width: 60%;
+            background-color: rgb(249, 233, 227);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hi-name {
+            font-size: 20px;
+        }
+
+        i {
+            font-size: 30px;
+            color: #F87B1B;
+        }
+
+        .developer-text {
+            font-size: 25px;
+        }
+
+        /* my-img */
+        .my-img {
+            height: 100%;
+            width: 40%;
+            background-color: rgb(245, 228, 222);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .self-img {
+            height: 50%;
+            width: 60%;
+        }
+
+        /* footer */
+        .footer {
+            height: 13%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+        }
+
+        /* experiance box */
+        .experiance-section {
+            height: 80%;
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        /* child */
+        .experiance {
+            height: 100%;
+            width: 30%;
+            box-shadow: 20px 1px 30px 10px rgb(231, 226, 226);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .project {
+            height: 100%;
+            width: 30%;
+            box-shadow: 1px 1px 30px 10px rgb(231, 226, 226);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .clind {
+            height: 100%;
+            width: 30%;
+            box-shadow: 20px 1px 30px 10px rgb(230, 227, 227);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* 3 child img */
+        .eximg {
+            height: 100%;
+            width: 30%;
+        }
+
+        .experiance-img {
+            background-color: rgb(244, 255, 222);
+        }
+
+        .project-img {
+            background-color: yellowgreen;
+        }
+
+        .clind-img {
+            background-color: yellowgreen;
+        }
+
+        /* 3 chold text */
+        .extext {
+            height: 100%;
+            width: 70%;
+        }
+
+        .experiance-text {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .project-text {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .clind-text {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .ex-img-hw {
+            height: 100%;
+            width: 100%;
+        }
+
+        .ex-big-text {
+            font-size: 25px;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: rgb(1, 1, 119);
+
+        }
+
+        .ex-small-text {
+            font-size: 15px;
+            color: rgb(255, 78, 14);
+            margin-left: 10px;
+        }
+
+        /* second-page */
+        .second-page {
+            height: 50vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .second {
+            height: 55%;
+            width: 16%;
+        }
+
+        .service {
+            width: 24%;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        }
+
+        .html {
+            box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+        }
+
+        .css {
+            box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+            display: flex;
+
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .javascript {
+            box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dsign {
+            box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .second-page-small-img-hw {
+            height: 30px;
+            width: 50px;
+            border-radius: 5px;
+        }
+
+        .sohal {
+            height: 22%;
+            width: 22%;
+            display: flex;
+            justify-content: center;
+            border-radius: 100%;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .html-second-img {
+            background-color: #8C00FF;
+        }
+
+        .css-second-img {
+            background-color: #FFC400;
+        }
+
+        .js-second-img {
+            background-color: #FF3F7F;
+        }
+
+        .design-second-img {
+            background-color: #63C8FF;
+        }
+
+        .Second-first-font {
+            font-size: 22px;
+            margin-top: 5px;
+        }
+
+        .second-two-font {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .right-arrow {
+            height: 45px;
+            width: 50px;
+            font-size: 17px;
+            border-radius: 100px;
+            border: 2px solid  white;
+            color: navy;
+           
+           
+        }
+
+        /* third-page */
+        .third-page {
+            height: 65%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .about-page {
+            height: 90%;
+            width: 55%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .about-my-img {
+            height: 100%;
+            width: 30%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .about-me {
+            height: 100%;
+            width: 70%;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .About-text {
+            font-size: 20px;
+        }
+
+        .resume-button {
+            height: 35px;
+            width: 90px;
+            font-size: 18px;
+            background-color: rgb(0, 123, 255);
+            color: white;
+
+            border: none;
+        }
+
+        .my-img-img {
+            height: 50%;
+            width: 90%;
+            box-shadow: 3px 1px 30px 4px rgb(255, 255, 255);
+        }
+
+        /* average-page */
+        .average-box {
+            height: 90%;
+            width: 40%;
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .average {
+            height: 2%;
+            width: 80%;
+        }
+
+        .htmlll {
+            background-color: rgb(221, 221, 221);
+        }
+
+        .cssss {
+            background-color: rgb(221, 221, 221);
+        }
+
+        .javascriptt {
+            background-color: rgb(221, 221, 221);
+        }
+
+        .dsignn {
+            background-color: rgb(221, 221, 221);
+        }
+
+        .text {
+            height: 24%;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .average-text {
+            margin-right: 418PX;
+        }
+
+        .average-textt {
+            margin-right: 425PX;
+        }
+
+        .average-texttt {
+            margin-right: 365PX;
+        }
+
+        .average-textttt {
+            margin-right: 353pX;
+        }
+
+        /* average line */
+        .line {
+            height: 100%;
+        }
+
+        .htmll {
+            width: 80%;
+            background-color: #F87B1B;
+        }
+
+        .csss {
+            width: 70%;
+            background-color: #F87B1B;
+        }
+
+        .javaa {
+            width: 20%;
+            background-color: #F87B1B;
+        }
+
+        .designn {
+            width: 60%;
+            background-color: #F87B1B;
+        }
+
+        /* fourth page */
+        .fourth-page {
+            height: 90vh;
+            width: 100vw;
+            background-color: yellowgreen;
+        }
+
+        /* fourth header */
+        .my {
+            height: 10%;
+            width: 100%;
+        }
+
+        .worktext {
+            background-color: whitesmoke;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-one {
+            height: 40px;
+            width: 130px;
+            border-radius: 20px;
+        }
+
+        /* cards */
+        .cards {
+            height: 90%;
+            width: 100%;
+            background-color: rgb(249, 233, 227);
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .one {
+            height: 70%;
+            width: 18%;
+        }
+
+        .cardhtml {
+            background-color: yellowgreen;
+
+
+        }
+
+        .cardcss {
+            background-color: rgb(205, 50, 50);
+        }
+
+        .cardjava {
+            background-color: rgb(50, 205, 91);
+        }
+
+        .carddesign {
+            background-color: rgb(99, 50, 205);
+        }
+
+        .cardbootstrap {
+            background-color: rgb(148, 130, 187);
+        }
+
+        /* card-img */
+        .two {
+            height: 55%;
+            width: 100%;
+
+        }
+
+        .htmlimg {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .cssimg {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .javaimg {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .designimg {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .bootstrapimg {
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* card-text */
+        .three {
+            height: 30%;
+            width: 100%;
+        }
+
+        .htmltext {
+            background-color: rgb(255, 255, 255);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .csstext {
+            background-color: rgb(255, 255, 255);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .javatext {
+            background-color: rgb(255, 255, 255);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .designtext {
+            background-color: rgb(255, 255, 255);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .bootstraptext {
+            background-color: rgb(255, 255, 255);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .view-project {
+            height: 35px;
+            width: 120px;
+            font-size: 17px;
+            border-radius: 7px;
+            border: none;
+            color: navy;
+        }
+
+        /* card-button */
+        .four {
+            height: 15%;
+            width: 100%;
+        }
+
+        .htmlbutton {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cssbutton {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .javabutton {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .designbutton {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bootstrapbutton {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* card-img HW */
+        .card-img {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* contact-------page */
+        .fifth-page {
+            height: 90%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .contact-header {
+            height: 10%;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .contact-information {
+            height: 80%;
+            width: 100%;
+            background-color: rgb(239, 191, 191);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .contact-box {
+            height: 90%;
+            width: 40%;
+            background-color: beige;
+
+
+
+        }
+
+        /* contact centert information */
+        .contact {
+            height: 16%;
+            width: 100%;
+            display: flex;
+
+            flex-direction: row;
+        }
+
+        .information {
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .address {
+            background-color: rgb(207, 37, 207);
+        }
+
+        .contact-phone {
+            background-color: rgb(223, 187, 223);
+        }
+
+        .email {
+            background-color: rgb(244, 172, 244);
+        }
+
+        .github {
+            background-color: rgb(238, 4, 238);
+        }
+
+        .linkdein {
+            background-color: rgb(176, 176, 176);
+        }
+
+        /* contact img box */
+        .contact-img {
+            height: 100%;
+            width: 12%;
+            background-color: #ffffff;
+            display: flex;
+            box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+            justify-content: center;
+
+        }
+
+        /* contact-text box */
+        .contact-text {
+            height: 100%;
+            width: 90%;
+            box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+            background-color: #ffffff;
+        }
+
+        .contact-img-hw {
+            height: 45%;
+            width: 60%;
+        }
+
+        /* contact name */
+        .contact-name {
+            font-size: 20px;
+        }
+
+        @media (min-width:300px) and (max-width:450px) {
+            body {
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+            }
+
+            /* first-page */
+            .first-page {
+                height: 100vh;
+                width: 100vw;
+                background-color: rgb(255, 0, 0);
+            }
+
+            /* header */
+            .header {
+                height: 8%;
+                width: 100%;
+                background-color: rgb(249, 233, 227);
+                display: flex;
+                gap: 40px;
+                font-size: 20px;
+            }
+
+            .home {
+                margin-left: 0%;
+                color: #F87B1B;
+
+            }
+
+            header {
+                margin-left: 0%;
+
+            }
+
+            .My-name {
+                margin-left: 0%;
+                display: none;
+            }
+
+            /* main */
+            .main {
+                height: 80%;
+                width: 100%;
+                background-color: blueviolet;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            /* my-text */
+            .my-text {
+                height: 60%;
+                width: 100%;
+                background-color: rgb(249, 233, 227);
+            }
+
+            /* my-img */
+            .my-img {
+                height: 40%;
+                width: 100%;
+                background-color: rgb(249, 233, 227);
+
+            }
+
+            /* footer */
+            .footer {
+                height: 12%;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /* experiance box */
+            .experiance-section {
+                height: 70%;
+                width: 90%;
+                background-color: aqua;
+                display: flex;
+                flex-direction: row;
+            }
+
+            /* child */
+            .experiance {
+                height: 100%;
+                width: 33%;
+                background-color: rgb(255, 244, 240);
+            }
+
+            .project {
+                height: 100%;
+                width: 34%;
+                background-color: rgb(249, 233, 227);
+            }
+
+            .clind {
+                height: 100%;
+                width: 33%;
+                background-color: rgb(246, 219, 209);
+            }
+
+            /* second-page */
+            .second-page {
+                height: 100vh;
+                width: 100vw;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .second {
+                height: 18%;
+                width: 56%;
+            }
+
+            .service {
+                width: 74%;
+                background-color: rgb(249, 233, 227);
+            }
+
+            .html {
+                background-color: rgb(197, 197, 197);
+            }
+
+            .css {
+                background-color: rgb(197, 197, 197);
+            }
+
+            .javascript {
+                background-color: rgb(197, 197, 197);
+            }
+
+            .dsign {
+                background-color: rgb(197, 197, 197);
+            }
+
+            /* third-page */
+            .third-page {
+                height: 140vh;
+                width: 100%;
+                background-color: rgb(239, 216, 204);
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .about-page {
+                height: 50%;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+            }
+
+            /* average-page */
+            .average-box {
+                height: 50%;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            .average {
+                height: 2%;
+                width: 90%;
+            }
+
+            .text {
+                height: 24%;
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+            }
+
+            .average-text {
+                margin-right: 310PX;
+                font-size: 20px;
+            }
+
+            .average-textt {
+                margin-right: 328PX;
+                font-size: 20px;
+            }
+
+            .average-texttt {
+                margin-right: 250PX;
+                font-size: 20px;
+            }
+
+            .average-textttt {
+                margin-right: 250PX;
+                font-size: 20px;
+            }
+
+
+            /* average line */
+            .line {
+                height: 100%;
+            }
+
+            .htmll {
+                width: 80%;
+                background-color: #F87B1B;
+            }
+
+            .csss {
+                width: 70%;
+                background-color: #F87B1B;
+            }
+
+            .javaa {
+                width: 20%;
+                background-color: #F87B1B;
+            }
+
+            .designn {
+                width: 60%;
+                background-color: #F87B1B;
+            }
+
+            /* fourth page */
+            .fourth-page {
+                height: 200vh;
+                width: 100vw;
+                background-color: yellowgreen;
+            }
+
+            /* fourth header */
+            .my {
+                height: 5%;
+                width: 100%;
+            }
+
+            .worktext {
+                background-color: whitesmoke;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .workbutton {
+                background-color: rgb(180, 159, 159);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .button-one {
+                height: 40px;
+                width: 90px;
+                border-radius: 20px;
+                border: none;
+            }
+
+            /* cards */
+            .cards {
+                height: 180vh;
+                width: 100%;
+                background-color: rgb(249, 233, 227);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .one {
+                height: 80%;
+                width: 60%;
+            }
+
+            .cardhtml {
+                background-color: yellowgreen;
+
+
+            }
+
+            .cardcss {
+                background-color: rgb(205, 50, 50);
+            }
+
+            .cardjava {
+                background-color: rgb(50, 205, 91);
+            }
+
+            .carddesign {
+                background-color: rgb(99, 50, 205);
+            }
+
+            .cardbootstrap {
+                background-color: rgb(148, 130, 187);
+            }
+
+            /* card-img */
+            .two {
+                height: 80%;
+                width: 100%;
+
+            }
+
+            .htmlimg {
+                background-color: rgb(255, 255, 255);
+            }
+
+            .cssimg {
+                background-color: rgb(255, 255, 255);
+            }
+
+            .javaimg {
+                background-color: rgb(255, 255, 255);
+            }
+
+            .designimg {
+                background-color: rgb(255, 255, 255);
+            }
+
+            .bootstrapimg {
+                background-color: rgb(255, 255, 255);
+            }
+
+            /* card-text */
+            .three {
+                height: 30%;
+                width: 100%;
+                display: none;
+            }
+
+            .htmltext {
+                background-color: rgb(124, 159, 132);
+            }
+
+            .csstext {
+                background-color: rgb(124, 159, 132);
+            }
+
+            .javatext {
+                background-color: rgb(124, 159, 132);
+            }
+
+            .designtext {
+                background-color: rgb(124, 159, 132);
+            }
+
+            .bootstraptext {
+                background-color: rgb(124, 159, 132);
+            }
+
+            /* card-button */
+            .four {
+                height: 20%;
+                width: 100%;
+            }
+
+            .htmlbutton {
+                background-color: rgb(226, 218, 171);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cssbutton {
+                background-color: rgb(226, 218, 171);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .javabutton {
+                background-color: rgb(226, 218, 171);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .designbutton {
+                background-color: rgb(226, 218, 171);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bootstrapbutton {
+                background-color: rgb(226, 218, 171);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /* card-img HW */
+            .card-img {
+                height: 100%;
+                width: 100%;
+            }
+
+            /* contact-------page */
+            .fifth-page {
+                height: 90%;
+                width: 100%;
+                background-color: rgb(249, 233, 227);
+
+            }
+
+            .contact-header {
+                height: 10%;
+                width: 100%;
+                background-color: white;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 20px;
+            }
+
+            .contact-information {
+                height: 80%;
+                width: 100%;
+                background-color: rgb(249, 233, 227);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .contact-box {
+                height: 95%;
+                width: 70%;
+                background-color: beige;
+
+            }
+
+            /* contact centert information */
+            .contact {
+                height: 16%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .information {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .address {
+                background-color: rgb(207, 37, 207);
+            }
+
+            .contact-phone {
+                background-color: rgb(223, 187, 223);
+            }
+
+            .email {
+                background-color: rgb(244, 172, 244);
+            }
+
+            .github {
+                background-color: rgb(238, 4, 238);
+            }
+
+            .linkdein {
+                background-color: rgb(176, 176, 176);
+            }
+
+            /* contact img box */
+            .contact-img {
+                height: 100%;
+                width: 30%;
+                background-color: #ffffff;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            /* contact-text box */
+            .contact-text {
+                height: 100%;
+                width: 70%;
+                background-color: #ffffff;
+            }
+
+            .contact-img-hw {
+                height: 40%;
+                width: 50%;
+                margin-left: 20px;
+            }
+
+            /* contact name */
+            .contact-name {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .Main-container -->
+    <!-- page-one -->
+    <div class="main-container">
+        <div class="first-page">
+            <!-- header -->
+            <div class="header">
+                <div class="My-name">Arsalan</div>
+                <header class="home">Home</header>
+                <header>About</header>
+                <header>Project</header>
+                <header>Contact</header>
+            </div>
+            <!-- main -->
+            <div class="main">
+                <!-- my-text section -->
+                <div class="my-text">
+                    <span class="hi-name">Hi'im ! <i>Arsalan Khan Pathan</i></span>
+                    <div class="hi-name"> Full Stack Developer</div>
+                    <br><br>
+                    <div class="developer-text">I have completed HTML and CSS, which <br>
+                        help in creating and designing web pages.</div>
+                </div>
+                <!-- my-img-section -->
+                <div class="my-img"><img class="self-img" src="https://cdn-icons-png.freepik.com/512/145/145867.png"
+                        alt=""></div>
+            </div>
+            <!-- footer -->
+            <div class="footer">
+                <div class="experiance-section">
+                    <!-- experiance -->
+                    <div class="experiance">
+                        <div class=" eximg experiance-img"><img class="ex-img-hw"
+                                src="https://media.istockphoto.com/id/1159741374/vector/creative-icon-of-a-half-brain-half-lightbulb-representing-ideas-creativity-knowledge.jpg?s=612x612&w=0&k=20&c=UggbJ9Wp1K3cGVR8x7zROTUZr9VHxe6vqU_3tgCRpCI="
+                                alt=""></div>
+                        <div class=" extext experiance-text">
+                            <div class="ex-big-text">5 Month</div>
+                            <div class="ex-small-text">Experiance</div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class=" eximg project-img"><img class="ex-img-hw"
+                                src="https://previews.123rf.com/images/copacool/copacool2004/copacool200400343/144703851-project-word-on-abstract-blue-speech-bubble-isolated-on-white-background-text-project.jpg"
+                                alt=""></div>
+                        <div class=" extext project-text">
+                            <div class="ex-big-text">2 Project</div>
+                            <div class="ex-small-text">Compleated</div>
+                        </div>
+                    </div>
+                    <div class="clind">
+                        <div class=" eximg clind-img"><img class="ex-img-hw"
+                                src="https://thumbs.dreamstime.com/b/happy-client-customer-business-icon-feedback-client-positive-sign-smile-symbol-happy-client-customer-business-icon-feedback-client-124978656.jpg"
+                                alt=""></div>
+                        <div class=" extext clind-text">
+                            <div class="ex-big-text">2</div>
+                            <div class="ex-small-text">Happy Clind</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second page -->
+        <!-- service-page -->
+        <div class="second-page">
+            <div class=" second service">
+                <h1>My Skill</h1>
+                <h3>HTML ,CSS , JAVASCRIPT, FIGMA</h3>
+              <img class="right-arrow" class=""
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Eo_circle_orange_arrow-right.svg/768px-Eo_circle_orange_arrow-right.svg.png"
+                    alt="">
+                <h3></h3>
+            </div>
+            <div class="second html">
+                <div class=" sohal html-second-img"><img class="second-page-small-img-hw"
+                        src="./assets/images/filetype-html.svg" alt=""></div>
+                <div class="Second-first-font">HTML</div>
+                <div class="second-two-font">Heading,Paragraphs,<br>style,color, Attributes, <br>links</div>
+            </div>
+            <div class="second css">
+                <div class="sohal css-second-img"><img class="second-page-small-img-hw"
+                        src="./assets/images/filetype-html.svg" alt=""></div>
+                <div class="Second-first-font">CSS</div>
+                <div class="second-two-font">Background , Border <br> Margins, Paddind <br>Font , icon</div>
+            </div>
+            <div class="second javascript">
+                <div class=" sohal js-second-img"><img class="second-page-small-img-hw"
+                        src="./assets/images/filetype-html.svg" alt=""></div>
+                <div class="Second-first-font">Javs Script</div>
+                <div class="second-two-font">Alert , Promt <br>Variable ,Function</div>
+
+            </div>
+            <div class="second dsign">
+                <div class=" sohal design-second-img"><img class="second-page-small-img-hw"
+                        src="./assets/images/filetype-html.svg" alt=""></div>
+                <div class="Second-first-font">Figma Design</div>
+                <div class="second-two-font">Responsiv Design</div>
+            </div>
+        </div>
+        <!-- third-page -->
+        <!-- average-page and about page-->
+        <div class="third-page">
+            <div class="about-page">
+                <div class="about-my-img"><img class="my-img-img"
+                        src="data:image/jpeg;base64,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"
+                        alt=""></div>
+                <div class="about-me"> <br><br>
+                    <h1>About Me</h1><br><br>
+                    <div class="About-text">I am <b style="color: #F87B1B;"> Arsalan Pathan </b> <br>Full Stack
+                        Developer trainee <br> I have completed
+                        learning HTML and <br>CSS, which are the basic building blocks <br>of web
+                        development. HTML helps me create <br> the structure of web pages and
+                        CSS helps me style <br> and design them to look attractive and user-friendly.</div>
+                    <br><br><button class="resume-button">Resume </button>
+                </div>
+            </div>
+            <div class="average-box">
+                <div class=" average text">
+                    <h1>My Experiance Area</h1>
+                </div>
+                <div class="average-text">HTML</div>
+                <div class="average htmlll">
+                    <div class="line htmll"></div>
+                </div>
+                <div class="average-textt">CSS</div>
+                <div class="average cssss">
+                    <div class="line csss"></div>
+                </div>
+                <div class="average-texttt">JAVASCRIPT</div>
+                <div class="average javascriptt">
+                    <div class="line javaa"></div>
+                </div>
+                <div class="average-textttt">WEB DESIGN </div>
+                <div class="average dsignn">
+                    <div class="line designn"></div>
+                </div>
+            </div>
+        </div>
+        <!-- card -->
+        <!-- fourth-page -->
+        <div class="fourth-page">
+            <div class="my worktext">My Amazing Work</div>
+            <!-- . project buttons -->
+
+            <!-- cards -->
+            <div class="cards">
+                <!-- html card -->
+                <div class="one cardhtml">
+                    <div class="two htmlimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/060/194/930/non_2x/html-programming-language-3d-icon-transparent-background-free-png.png"
+                            alt=""></div>
+                    <div class="three htmltext">HTML is the basic language used to create webpages. It gives by using
+                        tags like headings, paragraphs, images, links, tables, etc.</div>
+                    <div class="four htmlbutton"> <button style="background-color: #FF7F3E;" class="view-project"
+                            class="view-project">View project</button></div>
+
+                </div>
+                <!-- css card -->
+                <div class="one cardcss">
+                    <div class="two cssimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/060/194/928/non_2x/css-programming-language-3d-icon-transparent-background-free-png.png"
+                            alt=""></div>
+                    <div class="three csstext">CSS is the language used to style and design webpages. such as colors,
+                        fonts, layouts, spacingand animations. </div>
+                    <div class="four cssbutton"> <button style="background-color: #80C4E9;" class="view-project">View
+                            project</button></div>
+
+                </div>
+                <!-- java card -->
+                <div class="one cardjava">
+                    <div class="two javaimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/060/194/937/non_2x/javascript-programming-language-3d-icon-transparent-background-free-png.png"
+                            alt=""></div>
+                    <div class="three javatext">JavaScript is a powerful programming language used to make websites
+                        interactive and dynamic. </div>
+                    <div class="four javabutton"> <button style="background-color: #FAEA48;" class="view-project"
+                            class="view-project">View project</button></div>
+
+                </div>
+                <!-- design card -->
+                <div class="one carddesign">
+                    <div class="two designimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/065/386/869/non_2x/figma-circle-logo-icon-figma-app-editable-transparent-background-premium-social-media-design-for-digital-download-free-png.png"
+                            alt=""></div>
+                    <div class="three designtext">Figma is a powerful, cloud-based design tool used for creating UI/UX
+                        designs, website layouts, app screens, and prototypes.</div>
+                    <div class="four designbutton"> <button style="background-color: #3EC70B;" class="view-project"
+                            class="view-project">View project</button></div>
+
+                </div>
+                <!-- boostrap -->
+                <div class="one cardbootstrap">
+                    <div class="two bootstrapimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/060/194/940/non_2x/bootstrap-3d-icon-transparent-background-free-png.png"
+                            alt=""></div>
+                    <div class="three bootstraptext">Bootstrap is a popular open-source CSS framework used to build
+                        responsive and mobile-friendly websites quickly</div>
+                    <div class="four bootstrapbutton"> <button style="background-color: #8C00FF;" class="view-project"
+                            class="view-project"> View project</button></div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- contact page -->
+        <div class="fifth-page">
+            <br>
+            <div class="contact-header">Contact Me</div>
+            <div class="contact-information">
+                <div class="contact-box">
+                    <div class="contact information"> Contact Information</div>
+                    <div class="contact address">
+                        <div class="contact-img"><img class="contact-img-hw"
+                                src="https://cdn3.iconfinder.com/data/icons/web-ui-3/128/Marker-2-512.png  " alt="">
+                        </div>
+                        <div class="contact-text">
+                            <div class="contact-name">Address</div>Nagpur,Maharashtra
+                        </div>
+                    </div>
+                    <div class="contact contact-phone">
+                        <div class="contact-img"><img class="contact-img-hw"
+                                src="https://icons.veryicon.com/png/o/miscellaneous/template-4/telephone-contact-1.png"
+                                alt=""></div>
+                        <div class="contact-text">
+                            <div class="contact-name">Phone</div>+(91)9370390348
+                        </div>
+                    </div>
+                    <div class="contact email">
+                        <div class="contact-img"><img class="contact-img-hw"
+                                src="https://cdn-icons-png.freepik.com/256/12933/12933995.png?semt=ais_white_label"
+                                alt=""></div>
+                        <div class="contact-text">
+                            <div class="contact-name">Email</div>pathansohail68@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact github">
+                        <div class="contact-img"><img class="contact-img-hw"
+                                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></div>
+                        <div class="contact-text">
+                            <div class="contact-name">Github</div>link
+                        </div>
+                    </div>
+                    <div class="contact linkdein">
+                        <div class="contact-img"><img class="contact-img-hw"
+                                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Linkedin_circle_black-512.png"
+                                alt=""></div>
+                        <div class="contact-text">
+                            <div class="contact-name">Linkdein</div>link
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            Arsalan khan
+        </div>
+
+    </div>
+</body>
+
+</html>
